@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+    <script type="text/javascript" src="mitaka_conveni.js"></script>
+    <script>console.log(mitaka_conveni)</script>
+    <script type="text/javascript" src="mitaka_drugstore.js"></script>
+    <script>console.log(mitaka_drugstore)</script>
+    <script type="text/javascript" src="mitaka_hospital.js"></script>
+    <script>console.log(mitaka_hospital)</script>
+    <script type="text/javascript" src="mitaka_supermarket.js"></script>
+    <script>console.log(mitaka_supermarket)</script>
+    <script type="text/javascript" src="mitaka_police.js"></script>
+    <script>console.log(mitaka_police)</script>
+    <script type="text/javascript" src="mitaka_postoffice.js"></script>
+    <script>console.log(mitaka_postoffice)</script>
+    
+    <script type="text/javascript" src="mitaka_facility.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyAiV2ZbFIYuD3N4hzGLstSn2e4ZG5A7QlU&callback=initMap&libraries=places" async defer></script>
+    <form>
+    <p>
+    <input type="button" value="コンビニ" onclick="Conveni();" />
+    <input type="button" value="薬局" onclick="Drug();" />
+    <input type="button" value="スーパー" onclick="Super();" />
+    <input type="button" value="病院" onclick="Hospital();" />
+    <input type="button" value="警察" onclick="Police();" />
+    <input type="button" value="郵便局" onclick="Post();" />
+    </p>
+    </form>
+</body>
+</html>
