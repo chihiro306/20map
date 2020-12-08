@@ -1,5 +1,5 @@
 var map;
-var marker;
+var marker1;
 var icon;
 
 //コンビニ
@@ -95,7 +95,7 @@ function initMap(){
 };
 function Conveni() {
     for(var i=0;i<place_conveni.length;i++){
-        marker = new google.maps.Marker({
+        marker1 = new google.maps.Marker({
             position: {lat: place_conveni[i].lat, lng: place_conveni[i].lng},
             map: map,
             title: place_conveni[i].name,
@@ -107,10 +107,10 @@ function Conveni() {
     }
 }
 function doOpen(){
-    marker.setMap(map);
+    marker1.setMap(map);
 }
 function doClose(){
-    marker.setmap(null);
+    marker1.setmap(null);
 }
 
 function Drug() {
