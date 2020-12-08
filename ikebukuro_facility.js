@@ -1,4 +1,5 @@
 var map;
+var marker;
 var marker1;
 var icon;
 
