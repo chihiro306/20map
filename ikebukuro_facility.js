@@ -106,6 +106,12 @@ function Conveni() {
         });
     }
 }
+function doOpen(){
+    marker.setMap(map);
+}
+function doClose(){
+    marker.setmap(null);
+}
 
 function Drug() {
     for(var i=0;i<place_drugstore.length;i++){
